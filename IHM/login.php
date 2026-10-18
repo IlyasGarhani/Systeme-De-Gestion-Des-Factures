@@ -28,16 +28,16 @@
             <div class="image">
             <img src=<?=URL."/public/img/loginImg.jpg"?> alt="Erreur chargement de l'image">
             </div>
-            <div class="login-form">
+            <div class="login-form" action="../acceder">
                 <div>
                 <h1>Déclarez votre consommation en un clic.</h1>
                 <h4 class="lead-txt">Connectez-vous pour acceder à votre espace utilisateur</h4>
                 </div>
                 <form action="">
                     <h3>Adresse Email</h3>
-                    <input type="email" placeholder="exemple@email.com">
+                    <input type="email" placeholder="exemple@email.com" name="email">
                     <h3>Mot de passe</h3>
-                    <input type="password">
+                    <input type="password" name="password">
                     <button class="acceder" type="submit">Accéder</button>
                 </form>
             </div>
