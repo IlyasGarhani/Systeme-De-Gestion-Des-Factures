@@ -13,20 +13,29 @@ function authentification()
             {
                 $email = $_POST["email"];
                 $password = $_POST["password"];
-                $user = checkcredentials($email,$password);
-                $_SESSION["user"] = $user;
+                $user = checkcredentials($email);
                 if(isset($user))
                 {
-                    $fournisseur = checkFournisseur($user[0]);
-                    $consommateur = checkConsommateur($user[0]);
-                    if(isset($consommateur))
-                        {
-                        header("Location:".link."consommateur/tableauDeBord");
-                        }
-                    else if(isset($fournisseur))
-                        {
-                        header("Location:".link."fournisseur/tableauDeBord");
-                        }
+                    $passwordHashed = $user["pass"] ?? "";
+                    if(password_verify($password,$passwordHashed))
+                    {
+                        echo("holla2");
+                        $_SESSION["user"] = $user;
+                        $fournisseur = checkFournisseur($user[0]);
+                        $consommateur = checkConsommateur($user[0]);
+                        if(isset($consommateur))
+                            {
+                            header("Location:".link."consommateur/tableauDeBord");
+                            }
+                        else if(isset($fournisseur))
+                            {
+                            header("Location:".link."fournisseur/tableauDeBord");
+                            }
+                    }
+                    else
+                    {
+                        include_once(ROOT."IHM/login.php");
+                    }
                 }
                 else
                 {
@@ -34,15 +43,13 @@ function authentification()
                 }
             }
 
-    }
-
-
+        }
     function redirectToIndexF()
     {
     include_once(ROOT."/IHM/tableauF.php");
     }
 
-        function redirectToIndexC()
+    function redirectToIndexC()
     {
         include_once(ROOT."/IHM/tableauC.php");
     }

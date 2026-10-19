@@ -55,10 +55,10 @@
     <main class="main">
         <div class="form-div centering">
             <form action="./ajouter" method="post">
-                Nom: <input type="text">
-                Prenom: <input type="text">
-                Adresse: <input type="text">
-                Email: <input type="email">
+                Nom: <input type="text" name="nom">
+                Prenom: <input type="text" name="prenom">
+                Adresse: <input type="text" name="adresse">
+                Email: <input type="email" name="email">
                 <button type="submit">Enregistrer</button>
             </form>
         </div>
