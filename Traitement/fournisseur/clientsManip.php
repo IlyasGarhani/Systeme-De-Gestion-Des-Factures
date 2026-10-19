@@ -25,6 +25,7 @@
             $passwordHashed = password_hash($password,PASSWORD_DEFAULT);
             $lastUser = insertUser($_POST["email"],$_POST["nom"],$_POST["prenom"],$passwordHashed);
             insertConsommateur($lastUser,$_SESSION["user"]["id"],$_POST["adresse"]);
+            $
         }
     }
 ?>
