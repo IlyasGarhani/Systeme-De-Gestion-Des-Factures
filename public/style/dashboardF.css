@@ -1,0 +1,163 @@
+body
+{
+    font-family: Poppins;
+    background-color: #f4f4f4;
+    margin :0px;
+    padding: 0px;
+}
+ul
+{
+    margin: 10px 10px;
+    padding: 0px;
+}
+.menu
+{
+    position: fixed;
+    max-width: 380px;
+    height: 1200px;
+    background-color: #454545;
+    overflow: hidden;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin: 0px 0px;
+
+}
+.menu-list
+{
+    height: 920px;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.connexion-btn, .add-btn,.modify-btn
+{
+    font-size: 18px;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 18px;
+    background-color: #c8102e;
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+    transition-duration: 0.6s;
+    font-weight: bold;
+}
+.connexion-btn:hover, .add-btn:hover,.modify-btn:hover
+{
+    background-color: #a50d26;
+    transition-duration: 0.6s;
+}
+.title
+{
+    font-weight: 900;
+    font-size: 62px;
+    color: white;
+}
+.connexion-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.identity
+{
+    color: white;
+    margin: 0px;
+}
+.role-style
+{
+    color: #d9d9d9;
+    margin: 0px;
+}
+.login-creds
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.border
+{
+    padding: 10px;
+    border-bottom-width:1px ;
+    border-bottom-style:solid ;
+}
+
+.section-txt
+{
+    color: white;
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+}
+
+a 
+{
+    text-decoration: none;
+}
+.section-txt svg
+{
+    margin-right: 4px;
+}
+.selected
+{
+    background-color: #c8102e;
+}
+.centering
+{
+    display: flex;
+    flex-direction: column;
+    margin: 290px 865px;
+    width: 290px;
+    padding: 12px;
+    gap: 10px;
+}
+.flex-start
+{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.add-btn,.modify-btn
+{
+    margin: 4px 9px;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #d9d9d9;
+    color: black;
+}
+.add-btn:hover,.modify-btn:hover
+{
+    background-color: #9f9d9d;
+    transition-duration: 0.6s;
+}
+.modify-btn
+{
+    margin: 4px 0px;
+}
+
+table
+{
+    width: 100%;
+    border-collapse :collapse;
+
+}
+.add-btn
+{
+    margin-right: 0px;
+}
+th,td
+{
+    text-align: center;
+}
+td:last-child
+{
+    text-align: right;
+}
