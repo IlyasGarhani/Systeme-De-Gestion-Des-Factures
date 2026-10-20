@@ -63,6 +63,7 @@
                         <th>ID</th>
                         <th>NOM</th>
                         <th>PRENOM</th>
+                        <th>Adresse</th>
                         <th>ACTION</th>
                     </tr>
                     <?php foreach($data as $V){ ?>
@@ -70,6 +71,7 @@
                         <td><?=$V[0]?></td>
                         <td><?=$V[1]?></td>
                         <td><?=$V[2]?></td>
+                        <td><?=$V[3]?></td>
                         <td><a href="./modifier/<?=$V[0]?>"><button  class="modify-btn">Modifier un client</button></a></td>
                     </tr>
                     <?php } ?>

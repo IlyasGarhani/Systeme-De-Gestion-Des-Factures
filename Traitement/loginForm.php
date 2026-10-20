@@ -19,7 +19,6 @@ function authentification()
                     $passwordHashed = $user["pass"] ?? "";
                     if(password_verify($password,$passwordHashed))
                     {
-                        echo("holla2");
                         $_SESSION["user"] = $user;
                         $fournisseur = checkFournisseur($user[0]);
                         $consommateur = checkConsommateur($user[0]);
@@ -27,7 +26,7 @@ function authentification()
                             {
                             header("Location:".link."consommateur/tableauDeBord");
                             }
-                        else if(isset($fournisseur))
+                        if(isset($fournisseur))
                             {
                             header("Location:".link."fournisseur/tableauDeBord");
                             }

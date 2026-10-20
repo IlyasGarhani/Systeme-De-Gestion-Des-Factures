@@ -27,6 +27,10 @@ else if($URL[0] == "consommateur")
             {
                add();
             }
+         else if($URL[1] == "modifier")
+            {
+                modify($URL[2]);
+            }
     }
 else if($URL[0] == "fournisseur")
     {

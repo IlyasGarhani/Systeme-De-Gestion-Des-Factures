@@ -18,4 +18,12 @@
         mysqli_query($link,$sql);
         return mysqli_insert_id($link);
     }
+    function modifyUtilisateur($id,$nom,$prenom,$email)
+        {
+            global $link;
+            $sql = "UPDATE utilisateur
+                    SET nom='".$nom."',prenom='".$prenom."',email='".$email."'
+                    WHERE id=".$id;
+            return mysqli_query($link,$sql);
+        }
 ?>
