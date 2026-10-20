@@ -17,7 +17,7 @@
             <li><span class="title">Fatourti<span></li>
             <li>
                 <a class="element" href=<?=dir."utilisateur/authentification"?>>
-                <button class="connexion-btn">Connexion</button>
+                <button class="connexion-btn">Deconnexion</button>
                 </a>
             </li>
         </ul>

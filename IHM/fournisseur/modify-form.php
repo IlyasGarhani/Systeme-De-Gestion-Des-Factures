@@ -25,7 +25,7 @@
                         </a>
                     </div>
                     <div class="border selected">
-                        <a class="section-txt" href="../consommateur/all" ><i class="fa-solid fa-user-group"></i> Consulter Vos Clients
+                        <a class="section-txt" href="../all" ><i class="fa-solid fa-user-group"></i> Consulter Vos Clients
                         </a>
                         
                     </div>
@@ -53,15 +53,18 @@
         </ul>
         </nav>
     <main class="main">
-        <div class="form-div centering">
-            <form action="../modifier/<?=$result["id"]?>" method="post">
-                <div>ID: <input type="text" name="id" disabled value="<?=$result["id"]?>"></div>
-                <div>Nom: <input type="text" name="nom" value="<?=$result["nom"]?>"></div>
-                <div>Prenom: <input type="text" name="prenom" value="<?=$result["prenom"]?>"></div>
-                <div>Adresse: <input type="text" name="adresse" value="<?=$result["adresse"]?>"></div>
-                <div>Email: <input type="email" name="email" value="<?=$result["email"]?>"></div>
-                <button type="submit">Enregistrer</button>
-            </form>
+        <div class="container">
+            <div class="centering">
+                <form action="../modifier/<?=$result["id"]?>" method="post">
+                    <div class="form-div">
+                        <div class="champ"><h3>Nom: </h3><input type="text" name="nom" value="<?=$result["nom"]?>"></div>
+                        <div class="champ"><h3>Prenom: </h3><input type="text" name="prenom" value="<?=$result["prenom"]?>"></div>
+                        <div class="champ"><h3>Adresse: </h3><input type="text" name="adresse" value="<?=$result["adresse"]?>"></div>
+                        <div class="champ"><h3>Email: </h3><input type="email" name="email" value="<?=$result["email"]?>"></div>
+                         <div class="champ center-btn"> <button type="submit" class="modify-btn"><i class="fa-solid fa-floppy-disk"></i>Enregistrer</button></div>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 </body>

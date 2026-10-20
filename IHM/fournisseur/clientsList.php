@@ -53,31 +53,34 @@
         </ul>
         </nav>
     <main class="main">
-        <div class="centering">
-            <div class="flex-start">
-                <a href="./ajouter" ><button class="add-btn">Ajouter un client</button></a>
-            </div>
-            <div>
-                <table>
-                    <tr>
-                        <th>ID</th>
-                        <th>NOM</th>
-                        <th>PRENOM</th>
-                        <th>Adresse</th>
-                        <th>ACTION</th>
-                    </tr>
-                    <?php foreach($data as $V){ ?>
-                    <tr>
-                        <td><?=$V[0]?></td>
-                        <td><?=$V[1]?></td>
-                        <td><?=$V[2]?></td>
-                        <td><?=$V[3]?></td>
-                        <td><a href="./modifier/<?=$V[0]?>"><button  class="modify-btn">Modifier un client</button></a></td>
-                    </tr>
-                    <?php } ?>
-                </table>
+        <div class="container">
+            <div class="centering">
+                <div class="flex-start">
+                    <h3>Liste des clients</h3>
+                    <a href="./ajouter" ><button class="add-btn"><i class="fa-solid fa-pen"></i> Ajouter un client</button></a>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOM</th>
+                            <th>PRENOM</th>
+                            <th>Adresse</th>
+                            <th>ACTION</th>
+                        </tr>
+                        <?php foreach($data as $V){ ?>
+                        <tr>
+                            <td><?=$V[0]?></td>
+                            <td><?=$V[1]?></td>
+                            <td><?=$V[2]?></td>
+                            <td><?=$V[3]?></td>
+                            <td><a href="./modifier/<?=$V[0]?>"><button  class="modify-btn"><i class="fa-solid fa-plus"></i> Modifier un client</button></a></td>
+                        </tr>
+                        <?php } ?>
+                    </table>
+                </div>
             </div>
         </div>
-    </main>
+        </main>
 </body>
 </html>

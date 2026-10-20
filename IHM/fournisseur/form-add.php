@@ -53,14 +53,18 @@
         </ul>
         </nav>
     <main class="main">
-        <div class="form-div centering">
-            <form action="./ajouter" method="post">
-                Nom: <input type="text" name="nom">
-                Prenom: <input type="text" name="prenom">
-                Adresse: <input type="text" name="adresse">
-                Email: <input type="email" name="email">
-                <button type="submit">Enregistrer</button>
-            </form>
+        <div class="container">
+            <div class="centering">
+                    <form action="./ajouter" method="post">
+                        <div class="form-div">
+                            <div class="champ"><h3>Nom:</h3> <input type="text" name="nom" class="input-champ"></div>
+                            <div class="champ"><h3>Prenom:</h3> <input type="text" name="prenom" class="input-champ"></div>
+                            <div class="champ"><h3>Adresse:</h3> <input type="text" name="adresse" class="input-champ" placeholder=""></div>
+                        <div class="champ "><h3>Email:</h3> <input type="email" name="email" class="input-champ" placeholder="exemple@gmail.com"></div>
+                            <div class="champ center-btn"><button type="submit" class="modify-btn"><i class="fa-solid fa-floppy-disk"></i>Enregistrer</button></div>
+                        </div>
+                    </form>
+            </div>
         </div>
     </main>
 </body>

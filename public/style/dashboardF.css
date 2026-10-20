@@ -110,20 +110,33 @@ a
 {
     background-color: #c8102e;
 }
+
+.container
+{
+    position: fixed;
+    top:150px;
+    left: 670px;
+    padding: 33px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 20px;
+}
 .centering
 {
     display: flex;
     flex-direction: column;
-    margin: 290px 865px;
-    width: fit-content;
+    width: 850px;
     padding: 12px;
     gap: 10px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .flex-start
 {
     display: flex;
-    justify-content: flex-end;
-
+    justify-content: space-between ;
+    align-items: center;
 }
 .add-btn,.modify-btn
 {
@@ -134,14 +147,21 @@ a
     color: black;
     width: 180px;
 }
-.add-btn:hover,.modify-btn:hover
+.add-btn:hover
 {
     background-color: #9f9d9d;
     transition-duration: 0.6s;
 }
 .modify-btn
 {
+    background-color: #c8102e;
+    color: white;
     margin: 4px 0px;
+}
+.modify-btn:hover
+{
+    background-color:#a50d26;
+    transition-duration: 0.6s;
 }
 
 table
@@ -161,4 +181,37 @@ th,td
 td:last-child
 {
     text-align: right;
+}
+.form-div
+{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+.champ
+{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+input
+{
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    background-color: #ffffff;
+    color: #1f1f1f;
+}
+input:focus
+{
+    outline: none;
+    border-color: #c8102e;
+}
+.center-btn
+{
+    display: flex;
+    justify-content: flex-end;
 }
