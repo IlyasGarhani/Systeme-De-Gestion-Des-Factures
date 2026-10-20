@@ -46,7 +46,7 @@
                 }
             else
                 {
-                    header("Location:".link."/consommateur/all");
+                    header("Location:".link."consommateur/all");
                     exit;
                 }
             

@@ -29,12 +29,12 @@
             <div class="image">
             <img src=<?=dir."/public/img/loginImg.jpg"?> alt="Erreur chargement de l'image">
             </div>
-            <div class="login-form" action="../acceder">
+            <div class="login-form">
                 <div>
                 <h1>Déclarez votre consommation en un clic.</h1>
                 <h4 class="lead-txt">Connectez-vous pour acceder à votre espace utilisateur</h4>
                 </div>
-                <form action="" method="post">
+                <form action="./authentification" method="post">
                     <h3> <i class="fa-solid fa-at"></i>Adresse Email</h3>
                     <input type="email" placeholder="exemple@email.com" name="email" class="name">
                     <h3><i class="fa-solid fa-user-lock"></i>Mot de passe</h3>

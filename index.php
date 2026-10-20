@@ -7,7 +7,7 @@ include_once(ROOT."/Traitement/fournisseur/clientsManip.php");
 $URL = explode('/',$_GET["url"]);
 if($URL[0] == "utilisateur" )
     {
-        if($URL[1] == "authentification" || $URL[1] == "acceder" )
+        if($URL[1] == "authentification")
             {
                 authentification();
             }
